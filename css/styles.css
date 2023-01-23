@@ -185,7 +185,7 @@ body {
 /*------------------------------------------------*/
 .section__change_message--textarea {
     background-color: #FFFFFF;
-    background-image: url("../imgs/search_word1.png");
+    background-image: url("imgs/search_word1.png");
     background-repeat: no-repeat;
     border: none;
     border-radius: 24px;
