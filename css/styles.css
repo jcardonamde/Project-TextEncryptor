@@ -1,0 +1,362 @@
+* {
+    /*background-color: #F3F5FC;*/
+    box-sizing: border-box;
+    font-family: 'Inter';
+    font-size: 30px;
+    line-height: 150%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+}
+
+.body__background_video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 105%;
+    min-height: 100%;
+    transform: translateX(calc((100% - 100vw) / 2));
+    z-index: -2;
+}
+
+.header__page--img_logo {
+    height: 48px;
+    width: 120px;
+}
+
+.header__page--nav_list {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.container__ppal {
+    display: flex;
+    flex-direction: row;
+    height: 75vh;
+    /*justify-content: start;*/
+    margin: 0px 80px 10px 80px;
+}
+
+/*--------------------------------------------------*/
+/*---------- Message for Encrypt styles  ----------*/
+/*------------------------------------------------*/
+.section__new_message {
+    height: auto;
+    width: 65%;
+}
+
+.section__change_message {
+    height: auto;
+    margin-left: 60px;
+    position: relative;
+    width: 30%;
+}
+
+.section__new_message--textarea {
+    border: none;
+    border-radius: 32px;
+    /*color: #0A3871;*/
+    color: #016339;
+    height: 70%;
+    padding-left: 17px;
+    padding-top: 10px;
+    resize: none;
+    width: 100%;
+}
+::placeholder {color: #016339; }
+    .section__new_message--textarea:focus {
+        padding-left: 17px;
+        padding-right: 17px;
+        padding-top:10px;
+        outline: none;
+    }
+
+.section__new_message--info_img {
+    margin-top: 11px;
+    height: 20px;
+    width: 20px;
+}
+
+.section__new_message--info_label {
+    color: yellow;
+    font-size: 18px;
+}
+
+.section__new_message--btn_encrypt {
+    align-items: center;
+    background-color: #016339;
+    border: none;
+    border-radius: 30px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 22px;
+    height: 50px;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    transition: .3x ease all;
+    width: 328px;
+}
+
+#span-btn_encrypt {
+    position: relative;
+    transform: .3s ease all;
+    z-index: 2;
+}
+
+.section__new_message--btn_encrypt::after {
+    background: none;
+    border-radius: 100px;
+    content: "";
+    height: 1px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transition: .3s ease-in-out all;
+    transform-origin: center;
+    width: 1px;
+    z-index: 1;
+}
+
+.section__new_message--btn_encrypt:hover::after {
+    transform: scale(400);
+    background: #FFFFFF;;
+}
+
+.section__new_message--btn_encrypt:hover {
+    border: 1px solid yellowgreen;
+    color: #016339;
+    font-weight: bold;
+}
+
+.section__new_message--btn_decrypt {
+    align-items: center;
+    background-color: #D8DFE8;
+    border: none;
+    border-radius: 30px;
+    color: #016339;
+    cursor: pointer;
+    font-size: 22px;
+    height: 50px;
+    justify-content: center;
+    margin-left: 30px;
+    overflow: hidden;
+    position: relative;
+    transition: .3x ease all;
+    width: 328px;
+}
+
+#span-btn_decrypt {
+    position: relative;
+    transform: .3s ease all;
+    z-index: 2;
+}
+
+.section__new_message--btn_decrypt::after {
+    background: none;
+    border-radius: 100px;
+    content: "";
+    height: 1px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transition: .3s ease-in-out all;
+    transform-origin: center;
+    width: 1px;
+    z-index: 1;
+}
+
+.section__new_message--btn_decrypt:hover::after {
+    transform: scale(400);
+    background: #016339;
+}
+
+.section__new_message--btn_decrypt:hover {
+    border: 1px solid yellowgreen;
+    color: yellow;
+    font-weight: bold;
+}
+
+/*--------------------------------------------------*/
+/*---------- Show New Message styles  -------------*/
+/*------------------------------------------------*/
+.section__change_message--textarea {
+    background-color: #FFFFFF;
+    background-image: url("/imgs/search_word1.png");
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 24px;
+    color: #016339;
+    height: 100%;
+    padding-left: 17px;
+    padding-right: 17px;
+    padding-top:10px;
+    resize: none;
+    width: 100%;
+}
+::placeholder {color: #016339; }
+.section__change_message--textarea:focus {
+    padding-left: 17px;
+    padding-right: 17px;
+    padding-top:10px;
+    outline: none;
+}
+
+.section__change_message--labels {
+    font-size: 20px;
+    width: auto;
+    position: absolute;
+    bottom: 75px;
+    left: 20%;
+}
+
+.section__change_message--copy_button {
+    align-items: center;
+    border: 1px solid #016339;
+    border-radius: 24px;
+    color: #016339;
+    cursor: pointer;
+    font-size: 22px;
+    height: 50px;
+    justify-content: center;
+    overflow: hidden;
+    transition: .3x ease all;
+    width: 310px;
+    position: absolute;
+    bottom: 20px;
+    left: 24px;
+}
+
+#span-btn_copy {
+    position: relative;
+    transform: .3s ease all;
+    z-index: 2;
+}
+
+.section__change_message--copy_button::after {
+    background: none;
+    border-radius: 100px;
+    content: "";
+    height: 1px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transition: .3s ease-in-out all;
+    transform-origin: center;
+    width: 1px;
+    z-index: 1;
+}
+
+.section__change_message--copy_button:hover::after {
+    transform: scale(400);
+    background: #016339;
+}
+
+.section__change_message--copy_button:hover {
+    border: 1px solid yellowgreen;
+    color: #D8DFE8;
+    font-weight: bold;
+}
+
+/*--------------------------------------------------*/
+/*-----------------Footer styles ------------------*/
+/*------------------------------------------------*/
+.footer {
+    background-color: #D8DFE8;
+    color: #016339;
+    height: 60px;
+    margin-top: 20px;
+}
+
+.footer__info a {
+    text-decoration: none;
+}
+
+.footer__info--imgs {
+    margin-left: -25px;
+}
+
+.footer__info--img_social_network {
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+}
+
+/* --------------------------------------------------  */
+/* --------- CSS Styles for Media Queries ------------*/
+/* ------------------------------------------------- */
+/*MediaQuerie Aplicable for screens of Tablets like Ipad 768x1024*/
+@media screen and (max-width:768px) {
+    .container__ppal {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100vh;
+        margin: 0px;
+        margin-top: 35px;
+    }
+
+    .section__new_message {
+        width: 90%;
+    }
+    
+    .section__change_message {
+        margin: 0px;
+        height: 400px;
+        width: 90%;
+    }
+
+    .section__change_message--textarea {
+        background-position: center;
+        background-size: 400px 400px;
+    }
+
+    .section__change_message--labels {
+        left: 35%;
+    }
+
+    .section__change_message--copy_button {
+        left: 27%;
+    }
+
+    .footer {
+        margin-top: 10px;
+    }
+}
+
+
+/*MediaQuerie Aplicable for screens of Smartphones like IphoneX 375x812*/
+@media screen and (min-width: 375px) and (max-device-width : 465px) {
+    .section__new_message {
+        width: 80%;
+    }
+    
+    .section__change_message {
+        width: 80%;
+    }
+
+    .section__new_message--btn_decrypt {
+        margin-left: 10px;
+    }
+
+    .section__new_message--info_label {
+        font-size: 15px;
+    }
+
+    .section__change_message--labels {
+        left: 23%;
+    }
+
+    .section__change_message--copy_button {
+        left: 25%;
+        width: 200px;
+    }
+
+    .footer {
+        margin-top: 25px;
+    }
+}
