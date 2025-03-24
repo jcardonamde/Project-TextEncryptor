@@ -7,52 +7,49 @@
 
 
 **Posted in the topic:**
-
 [https://github.com/topics/challengeonecodificador4](https://github.com/topics/challengeonecodificador4)
 
 
-In this opportunity I have developed a stylized text encryptor under the theme of matrix. This application has the function to encode and decode text messages in a simple way. With the aim of exchanging information with other people in a safe and fun way.
+## Description
 
-Developed with HTML5, CSS, Boostrap 5 for the frontend and JavaScript in the encryption / decryption functions.
+Project-TextEncryptor is a stylized text encryptor inspired by the Matrix theme. This application allows users to encode and decode text messages simply, aiming to exchange information securely and enjoyably.
 
+<br>
 
+:wrench:
+***Features:***
 
-## 🔗 Link:
+- [x] Text Encryption/Decryption: Encode and decode messages using custom algorithms.
+- [x] Clipboard Functionality: Copy encrypted/decrypted text directly to the clipboard for easy sharing.
+- [x] Responsive Design: Optimized for Desktop, Tablet, and Smartphone viewing.
 
-Deploy : [Github-Pages](https://jcardonamde.github.io/Project-TextEncryptor/)
+<br>
 
+**Technologies Used** 💻
 
-## **Technologies used** 💻
+:art:
+***Frontend:***
 
+- [x] HTML5: Structured the content using semantic elements and BEM methodology for CSS classes and components.
+- [x] CSS3: Implemented responsive design with Media Queries, hover effects on buttons, and Flexbox for layout management.
+- [x] Bootstrap 5: Styled the navbar, main sections, and footer; included an interactive modal in the responsive navbar.
 
 :leopard:
 ***JAVASCRIPT:***
-- [x] Function to work only with lowercase letters.
-- [x] Control of accents and special characters.
-- [x] Convert a word for the encrypted version also return an encrypted word for its original version.
-- [x] Copy the encrypted/decrypted text for the transfer section to the browser clipboard.
+- [x] Functions that operate exclusively with lowercase letters.
+- [x] Controls to handle accents and special characters.
+- [x] Conversion functions to encrypt and decrypt words.
+- [x] Clipboard integration for easy text copying.
 
-:globe_with_meridians:
-***BOOSTRAP 5:***
+<br>
 
-- [x] Styles for navbar, main, sections, footer.
-- [x] Interactive modal on navbar responsive.
+## 🔗 Live Demo:
 
-:art: ***CSS3:***
+Experience the application live: [Project-TextEncryptor Demo](https://jcardonamde.github.io/Project-TextEncryptor/)
 
-- [x] Media Query for Desktop, Tablet and Smartphone.
-- [x] Effects for the hover on the buttons.
-- [x] Customizations to properties of the elements in the page.
-- [x] Flexbox.
+<br>
 
-:wrench:
-***HTML5:***
-
-- [x] BEM methodology for CSS3 classes and components.
-
-
-
-## **User History**
+## :globe_with_meridians: User History
 
 Work on an application that encrypts texts, so you will be able to exchange secret messages with other people who know the secret of the encryption used.
 
@@ -64,4 +61,32 @@ The encryption "keys" we will use are as follows:
 * The letter "o" is converted to "ober".
 * The letter "u" is converted to "ufat".
 
+<br>
+
+## How to Use
+
+1. Encrypt a Message:
+* Enter your text into the input field.
+* Click the "Encrypt" button.
+* The encrypted message will appear in the output section.
+
+2. Decrypt a Message:
+* Enter the encrypted text into the input field.
+* Click the "Decrypt" button.
+* The original message will be displayed in the output section.
+
+3. Copy to Clipboard:
+* After encryption or decryption, click the "Copy" button to copy the result to your clipboard.
+
+<br>
+
+## Contributions
+
+If you wish to contribute to this project, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch (git checkout -b feature/new-feature).
+3. Commit your changes (git commit -m 'Add new feature').
+4. Push to the branch (git push origin feature/new-feature).
+5. Open a Pull Request in this repository.
 
